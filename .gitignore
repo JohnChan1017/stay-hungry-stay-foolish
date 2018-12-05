@@ -1,5 +1,7 @@
 .vscode
 .idea/
+.DS_Store
+Thumbs.db
 node_modules
 presenterTool
 *-win32-x64
