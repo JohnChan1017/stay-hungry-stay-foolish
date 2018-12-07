@@ -1,17 +1,18 @@
 {
-  "name": "sysinfoapp",
+  "name": "alienbaseapp",
   "version": "1.0.0",
   "description": "Simple system monitor",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . AlienBaseApp --out ./myApp --win --arch=x64 --app-version=1.0.0 --overwrite --ignore=node_modules --icon=./img/icon.ico"
   },
   "author": "JohnChan",
   "license": "ISC",
   "devDependencies": {
     "electron": "^3.0.10",
-    "electron-packager": "^12.2.0"
+    "electron-packager": "^13.0.0"
   },
   "dependencies": {}
 }

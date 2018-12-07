@@ -7,7 +7,7 @@ let win;
 
 function createWindow() {
   // Create browser window
-  win = new BrowserWindow({width:800, height:600, icon:__dirname+'/img/icon.png'});
+  win = new BrowserWindow({width:800, height:600, icon:__dirname+'/img/alien 256x256.png'});
 
   // load index.html
   win.loadURL(url.format({
