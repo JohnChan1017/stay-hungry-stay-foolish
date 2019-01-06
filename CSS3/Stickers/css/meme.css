@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Eoboto Condensed", sans-serif;
+  font-size: 4.5vw;
+  line-height: 1.4;
+  background-color: #000;
+  color: #fff;
+}
+.meme {
+  user-select: none;
+}
+div {
+  width: 100vw;
+  height: 54.5vw;
+  margin: 0;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  background-size: contain;
+  background-image: url(../img/goldblum.png);
+}
+
+span {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);/* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+p {
+  position: absolute;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 700;
+  text-shadow: -0.01em -0.01em 0 #fff, 0.01em -0.01em 0 #fff,
+  -0.01em 0.01em 0 #fff, 0.01em 0.01em 0 #fff, -0.05em -0.05em 0.05em #000, 0.05em -0.05em 0.05em #000, -0.05em 0.05em 0.05em #000,
+  0.05em 0.05em 0.05em #000;
+}
+
+p:nth-child(2) {
+  top: 0.5vw;
+  left: 0;
+  right: 0;
+  margin: 2vw 7vw;
+  text-align: center;
+}
+p:nth-child(3){
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 2vw 6vw;
+  text-align: center;
+}
