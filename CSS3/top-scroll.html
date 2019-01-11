@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+ul>li>a:before{
+position: absolute;
+z-index: 1;
+left: 0px;
+top: 0px;
+display: inline-block;
+height: 3px;
+width: 100%;
+background-color: #ed6d00;
+content: "";
+transform: scale3d(0, 1, 1);
+transform-origin: left;
+transition: all 0.5s;
+}
+ul>li:hover>a:before{
+transform: scale3d(1, 1, 1);
+color: #ed6d00;
+}</style>
+</head>
+<body>
+<ul>
+  <li><a href="">哈哈</a></li>
+  <li><a href="">嘿嘿</a></li>
+  <li><a href="">啊啊</a></li>
+  <li><a href="">下划线</a></li>
+</ul>
+</body>
+</html>
