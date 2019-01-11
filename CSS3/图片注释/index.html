@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <title></title>
+  <style>
+    body {
+      font-family: '微软雅黑', Calibri, Arial, sans-serif;
+      color: #89867e;
+      background: #f9f9f9;
+    }
+
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+    }
+
+    a img {
+      border: none;
+    }
+
+    /* demo1 css */
+    .caption {
+      display: inline-block;
+      position: relative;
+      margin: 10px;
+    }
+
+    .caption img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .caption::before,
+    .caption::after {
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      padding: 20px;
+      opacity: 0;
+      z-index: 1;
+      -webkit-transition: opacity .3s;
+      -moz-transition: opacity .3s;
+      transition: opacity .3s;
+    }
+
+    .caption::before {
+      content: attr(data-title);
+      /* 获取自定义数据属性 标题*/
+      top: 0;
+      height: 30%;
+      background: rgb(197, 71, 26);
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    .caption::after {
+      content: attr(data-description);
+      /* 获取自定义数据属性 描述*/
+      top: 30%;
+      height: 70%;
+      background: #a21f00;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    .caption:hover::before,
+    .caption:hover::after {
+      opacity: 1;
+    }
+
+    /* demo2 css*/
+    .caption2 {
+      display: inline-block;
+      position: relative;
+      margin: 10px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .caption2 img {
+      display: block;
+      max-width: 100%;
+      -webkit-transition: opacity 0.3s ease-in-out;
+      -moz-transition: opacity 0.3s ease-in-out;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .caption2:hover img {
+      opacity: .5;
+    }
+
+    .caption2::before,
+    .caption2::after {
+      position: absolute;
+      background: #fff;
+      width: 100%;
+      height: 50%;
+      color: #fff;
+      padding: 20px;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      -moz-transition: -moz-transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .caption2::before {
+      content: attr(data-title);
+      top: 0;
+      z-index: 1;
+      background: #B87046;
+      font-size: 40px;
+      font-weight: 300;
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+
+    .caption2::after {
+      content: attr(data-description);
+      top: 50%;
+      background: #E6453E;
+      font-size: 16px;
+      text-align: left;
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+
+    .caption2:hover::before,
+    .caption2:hover::after {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+
+    /* demo3 css */
+    span[data-descr] {
+      position: relative;
+      text-decoration: underline;
+      color: #00F;
+      cursor: help;
+    }
+
+    span[data-descr]:hover::after {
+      content: attr(data-descr);
+      position: absolute;
+      left: 0;
+      top: 24px;
+      min-width: 200px;
+      border: 1px #aaaaaa solid;
+      border-radius: 10px;
+      background-color: #ffffcc;
+      padding: 12px;
+      color: #000000;
+      font-size: 14px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="caption" href="#" data-title="Lorem ipsum" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+    <img src="./img/SmugEagle.png" alt="deom1">
+  </a>
+
+  <a class="caption2" href="#" data-title="Lorem ipsum" data-description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam">
+    <img src="./img/gunslinger.png" alt="deom2">
+  </a>
+
+  <!-- deom3 -->
+  <p>这是上面代码的实现<br />
+    我们有一些 <span data-descr="collection of words and punctuation">文字</span> 有一些
+    <span data-descr="small popups which also hide again">提示</span>。<br />
+    把鼠标放上去<span data-descr="not to be taken literally">看看</span>.
+  </p>
+
+</body>
+
+</html>
