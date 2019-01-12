@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<!-- TODO: remove optional tags -->
+  <div id="elementid"></div>
+  <canvas id="myCanvas" width="500" height="500">
+    <h1>你的浏览器不支持canvas，请更新你的浏览器</h1>
+  </canvas>
+
+  <a href="javascript:;" id="clearBtn">擦除</a>
+
+
+
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script>
+    (function($){
+      $.fn.test111 = function(){
+        alert('test')
+      }
+      // $("#elementid").test111();
+
+      const canvas = $("#myCanvas"); 
+      // canvas.css('background','cyan');
+      const context = canvas.get(0).getContext("2d");
+      context.fillStyle = "rgb(255, 0, 0)";
+      context.save();
+      context.fillRect(50, 50, 100, 100);
+      // context.fillRect(40, 40, 100, 100); // fill Rectangle form (40, 40) width="100" height="100"
+      context.strokeRect(40, 160, 200, 100); // stroke Rectangle from (40, 160) width="200" height="100"
+      // context.beginPath();
+      context.moveTo(40, 40);
+      context.lineTo(340, 40);
+      context.lineTo(340, 100);
+      // context.lineTo(40, 100);
+      // context.closePath(); 
+      context.stroke();
+      let text = "Hello World";
+context.font = "italic small-caps bold 26px/30px serif";
+      context.strokeText(text, 360, 40);
+      /* canvas里都用弧度
+        常用弧度表
+        角度 = 弧度
+           0 = 0
+          30 = π/6
+          45 = π/4
+          60 = π/3
+          90 = π/2
+         120 = 2π/3
+         135 = 3π/4
+         150 = 5π/6
+         180 = π
+         270 = 3π/2
+         360 = 2π
+      */ 
+
+    $("#clearBtn").on("click", function(){
+      context.clearRect(0, 0, canvas.width(), canvas.height());
+    })
+
+
+    })(jQuery);
+    
+    // (function(str){alert(str)})("output");
+  </script>
+</body>
+</html>
