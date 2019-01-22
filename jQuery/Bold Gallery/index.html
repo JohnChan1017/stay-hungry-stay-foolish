@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+  crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="frame">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="backdrop"></div>
+
+        <div class="col-4 pic pic-1">
+          <img src="http://100dayscss.com/codepen/40-1.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-2">
+          <img src="http://100dayscss.com/codepen/40-2.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-3">
+          <img src="http://100dayscss.com/codepen/40-3.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-4">
+          <img src="http://100dayscss.com/codepen/40-4.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-5">
+          <img src="http://100dayscss.com/codepen/40-5.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-6">
+          <img src="http://100dayscss.com/codepen/40-6.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-7">
+          <img src="http://100dayscss.com/codepen/40-7.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-8">
+          <img src="http://100dayscss.com/codepen/40-8.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+        <div class="col-4 pic pic-9">
+          <img src="http://100dayscss.com/codepen/40-9.jpg" alt="">
+          <div class="overlay">
+            <i class="fas fa-plus"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $('.pic').click(function(){
+      $(this).toggleClass('active');
+      $('.backdrop').toggleClass('underlay');
+    })
+  </script>
+
+
+</body>
+</html>
