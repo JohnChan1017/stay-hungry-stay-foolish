@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 300">
+    <style>
+        .mouse {fill: #e5e4e3;}
+        .tulip {fill: #cc2954;}
+    </style>
+    <rect class="mouse" x="0" y="0" width="800" height="300" />
+    <polygon class="tulip" points="400, 280, 310, 150, 400, 20, 490, 150" />
+</svg>
