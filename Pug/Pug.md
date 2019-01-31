@@ -14,6 +14,8 @@ npm install -g pug pug-loader pug-filters pug-cli
 第三部：转译成html：
 
 ```js
-pug xxx.pug        # 压缩版
-pug -P xxx.pug     # 格式化版
+pug xxx.pug        # 压缩版 (默认)
+pug -P xxx.pug     # 格式化版 (不能小写，否则以为是--path)
+pug -P -o ./html   # 编译到哪里
+pug -w             # watching 自动编译
 ```
