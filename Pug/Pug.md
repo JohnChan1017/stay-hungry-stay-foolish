@@ -19,3 +19,5 @@ pug -P xxx.pug     # 格式化版 (不能小写，否则以为是--path)
 pug -P -o ./html   # 编译到哪里
 pug -w             # watching 自动编译
 ```
+node template.js
+console.log('<p>Timothy's Pug source code!</p>)
