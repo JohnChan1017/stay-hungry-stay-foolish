@@ -1,0 +1,39 @@
+//- doctype xml
+
+//- doctype transitional
+
+//- doctype strict
+
+doctype html
+html
+  head
+    title Hello
+  body
+    h1 Welcome to dcode!
+    p.
+       This is a paragprah tag
+       and this is a new line
+    ul
+      li This is item #1
+      li This is item #2
+      li This is item #3
+    input(type="password" name="inpPwd" data-js=`${ 5 > 2 ? "OK" : "NOT OK!"}`)
+
+    - const myClass = ["class1","class2","class3"]
+
+    div(class=myClass)
+    div.my-div(class=myClass)
+
+    - const myStyles = {"color": "red", "background": "blue"}
+    div(style=myStyles)
+
+    - const myAttributes = { "src" :"myPhoto.png", "alt": "this is my photo"}
+    img&attributes(myAttributes)
+
+    input(type="text" disabled)
+
+    .myClass
+
+    #onlyClass
+
+
