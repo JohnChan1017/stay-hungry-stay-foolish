@@ -3,6 +3,8 @@ var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
 var cache = {};
+var chatServer = request('./lib/chat_server');
+chatServer.listen(server);
 
 function send404(response){
   response.writeHead(404, {'Content-Type': 'text/plain'});
