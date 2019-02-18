@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .circle-load {
+      	position: absolute;
+      	width: 200px;
+      	height: 200px;
+      	top: 50%;
+      	left: 50%;
+      	transform: translate(-50%, -50%);
+      }
+      .circle-load-svg {
+      	stroke-dasharray: 0 570;
+      	animation:rot 8s linear infinite;
+      }
+
+      @keyframes rot{
+      	100%{
+      	  stroke-dasharray: 570 570;
+      	}
+      }
+  </style>
+</head>
+<body>
+  <hgroup class="circle-load">
+    <svg width="240px" height="240px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="110" cy="110" r="90" stroke-width="20" stroke="gainsboro" fill="none"></circle>
+      <circle cx="110" cy="110" r="90" stroke-width="20" stroke="darkturquoise" fill="none" class="circle-load-svg">
+      </circle>
+    </svg>
+  </hgroup>
+  <script>
+  var obj = document.querySelector(".circle-load-svg");
+    var length = obj.getTotalLength();
+    console.log(length);
+  </script>
+</body>
+</html>
