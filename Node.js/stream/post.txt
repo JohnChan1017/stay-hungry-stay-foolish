@@ -1,0 +1,45 @@
+{
+  "name": "stay-hungry-stay-foolish",
+  "version": "1.0.0",
+  "description": "daily learning",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnChan1017/stay-hungry-stay-foolish.git"
+  },
+  "keywords": [
+    "learning",
+    "new",
+    "knowledge"
+  ],
+  "author": "JohnChan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnChan1017/stay-hungry-stay-foolish/issues"
+  },
+  "homepage": "https://github.com/JohnChan1017/stay-hungry-stay-foolish#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "acorn": "^6.0.5",
+    "babel-eslint": "^10.0.1",
+    "editorconfig": "^0.15.2",
+    "elint": "^1.9.0",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "postcss": "^7.0.7",
+    "postcss-cli": "^6.1.1",
+    "prettier": "1.15.3",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  }
+}
