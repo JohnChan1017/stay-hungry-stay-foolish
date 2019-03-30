@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.love {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 不定宽高垂直居中推荐 flex */
+  width: 800px;
+  height: 500px;
+  background-color: #bcbfc0;
+  /* overflow: hidden; */
+}
+.director {
+  width: 1200px;
+  height: 100%;
+  border: 1px dashed red;
+  display: flex;
+  justify-content: space-between;
+}
+.actors {
+  width: 45%;
+  border: 1px solid purple;
+}
+.director {
+  animation: len 5s linear .2s infinite;
+}
+
+@keyframes len {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-400px);
+  }
+}
