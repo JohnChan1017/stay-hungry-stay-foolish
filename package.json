@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/JohnChan1017/stay-hungry-stay-foolish#readme",
   "dependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
